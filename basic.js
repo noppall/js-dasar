@@ -21,3 +21,41 @@ console.log(warga)
 console.log(Object.values(warga))
 // console.log(JSON.stringify(warga))
 console.log(JSON.stringify(warga.alamat))
+
+//arrays
+var hobi = ["ngoding", "gitaran", ["membaca", "menulis"], {"berfikir" : "filsafat"}]
+hobi.forEach(function(i, index){
+    console.log(index + " - " + i)
+})
+
+for(x of hobi){
+    console.log(x)
+}
+
+//for loops
+var penulis = [
+    {name : "Cak Nun", age: 67},
+    {name : "Pramoedya Ananta", age: 70}
+];
+
+// for (var j = 0; j <= penulis.length; j++){
+//     console.log(penulis[j].name)
+//     console.log(penulis[j].age)
+// }
+
+//switch
+var person = {
+    name : "Anna",
+    age : 18
+}
+
+switch(person.age){
+    case 18:
+        console.log("sudah dewasa kamu")
+        break
+    case 17:
+        console.log("bentar lagi dewasa")
+        break
+    default:
+        console.log("belum cukup umur")
+}
