@@ -1,3 +1,6 @@
+// import * as Math from "./math"
+// import {tambah, bagi} from "./math"
+
 //penggunaan var untuk variabel yang bisa diubah, const sebaliknya
 var name = "nopal";
 name = "sudah bukan nopal";
@@ -93,5 +96,20 @@ function callbackExmpl(name, callback){
 }
 
 callbackExmpl("Nouval Farras", function(name){
-    return "hello " + name
+    return `hello ${name}`
 })
+
+
+//coba import
+// var jumlahkan = Math.tambah(9,8)
+// console.log(jumlahkan)
+
+//const 
+const person = {}
+person["name"] = "nopal"
+
+const nopal = []
+nopal.push("masukkan nopal")
+
+console.log(person.name)
+console.log(nopal)
